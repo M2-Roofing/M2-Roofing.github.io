@@ -81,7 +81,14 @@ html
 							.main-box
 								h2 Services
 								hr
-								p We understand that we are a direct reflection of you and your company. This is something that we do not take lightly. 
+								p We understand that we are a direct reflection of you and your company. This is something that we do not take lightly.
+								ul
+									li Skill and Attention to Detail.
+									li Use Industry Best Materials.
+									li Provide Experienced Roofing Crew.
+									li All workers background checked and professionally trained.
+									li On Site Job Supervisor available to answer your questions during installation.
+									
 						.left-half
 							.main-boxer.darker
 								.side
@@ -108,12 +115,7 @@ html
 							h3 Our Work
 							.text-box
 								p Each project is treated as a Custom Roofing Assignment. We are not Assembly-Line Roofing Installers. Our commitment is to deliver total confidence that you are being represented in the best possible way. We will always use the best materials in the industry along with a top notch, experienced crew.
-								//ul
-									li Skill and Attention to Detail
-									li Use Industry Best Materials
-									li Provide Experienced Roofing Crew
-									li All workers background checked and professionally trained
-									li On Site Job Supervisor available to answer your questions during installation
+								
 
 						.col-33.guy-flip
 						
@@ -175,18 +177,17 @@ html
 							h2 Contact Us
 							hr
 							br
-					.flexsm.flex--center
-						.col-1-2.con-pad
-							.input
-								input(type="text" placeholder="First")
-						.col-1-2.con-pad
-							.input
-								input(type="text" placeholder="Last")
-					.flex.flex--center
-						.col-2-2.con-pad
-							input.large(type="text" placeholder="Message")
-					.flex.flex--center.button22
-						.button SUBMIT
+					.inner
+						form(accept-charset='UTF-8', action='https://formkeep.com/f/62a9c3b2176d', method='POST')
+							.input-group.flex
+								input(name="First" type="text" placeholder="First")
+								input(name="Last" type="text" placeholder="Last")
+							.input-group.flex
+								input(name="Email" type="email" placeholder="Email")
+								input(name="Number" type="tel" placeholder="Number")
+							.input-group.flex
+								textarea(name='Message', rows='2', placeholder="Message")
+							input(type='submit', value='submit')
 					
 					
 				section.foot
