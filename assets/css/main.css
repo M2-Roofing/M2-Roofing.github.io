@@ -1611,6 +1611,10 @@ section.content h2 {
   padding-bottom: 0;
 }
 
+section.content ul {
+  margin-left: 2vw;
+}
+
 section.content .kelsey {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1646,6 +1650,7 @@ section.content .kelsey h2.side {
 section.content .kelsey p {
   padding-top: 8.5vh;
   color: rgba(0, 0, 0, 0.7);
+  text-align: justify;
 }
 
 section.content .kelsey .left-half {
@@ -1788,6 +1793,9 @@ section.content .kelsey .side-bg {
     font-size: 15px;
   }
   section.content .kelsey p {
+    font-size: 12px;
+  }
+  section.content .kelsey ul {
     font-size: 12px;
   }
   section.content .kelsey .right-half, section.content .kelsey .left-half {
