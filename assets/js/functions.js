@@ -25,6 +25,11 @@ $(function() {
   });
 });
 
+$(document).ready(function(){
+	$('.animated').addClass('slideInDown');
+	
+});
+
 $(window).scroll(function() {
 	
 //Content box fadeRight
