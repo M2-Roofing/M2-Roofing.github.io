@@ -1,0 +1,35 @@
+section.gallery-contain {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+section.gallery-contain .gallery {
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+
+section.gallery-contain .gallery .gallery-images {
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+section.gallery-contain .gallery .gallery-images img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  section.gallery-contain .gallery .gallery-images {
+    margin: 0;
+    padding: 0;
+  }
+}

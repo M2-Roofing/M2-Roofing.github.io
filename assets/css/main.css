@@ -731,6 +731,55 @@ input[type="button"]:focus {
   }
 }
 
+section.works {
+  overflow: hidden;
+  margin-left: .2vw;
+  margin-right: .2vw;
+}
+
+section.works .gallery-contain {
+  position: relative;
+  width: 90vw;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+section.works .gallery-contain .gallery {
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+section.works .gallery-contain .gallery .gallery-images {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  width: 200px;
+  margin: .2vw;
+  overflow: hidden;
+}
+
+section.works .gallery-contain .gallery .gallery-images img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 400px) {
+  section.works section.gallery-contain .gallery .gallery-images {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .home-wrap {
   display: -webkit-box;
   display: -webkit-flex;
