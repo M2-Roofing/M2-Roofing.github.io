@@ -5,7 +5,7 @@ section.content
 		size: 40%
 		repeat: no-repeat
 		position: 22vw 50vh
-	height: 100vh
+	min-height: 100vh
 	width: 100%
 	overflow: hidden
 	padding: 0
@@ -23,7 +23,7 @@ section.content
 		padding-right: 0
 		padding-left: 0
 		padding-bottom: 0
-	
+
 	ul
 		margin-left: 2vw
 
@@ -37,7 +37,7 @@ section.content
 		width: 100%
 		margin: 0
 		padding: 0
-	
+
 		h2.side
 			font-size: 20px
 			font-weight: 900
@@ -76,10 +76,10 @@ section.content
 
 		.main-box
 			flex: 1
-	
+
 		.darker
 			background: #F5F5F5
-		
+
 		.lighter
 			background: white
 
@@ -88,7 +88,7 @@ section.content
 			flex: 1
 			flex-direction: row
 			opacity: 0
-	
+
 			&.slideInRight
 				animation-name: slideInRight
 				-webkit-animation-duration: 1s
@@ -96,42 +96,43 @@ section.content
 				-webkit-animation-fill-mode: both
 				animation-fill-mode: both
 				opacity: 1
-	
+
 		.side
 			flex: 1
 			text-align: center
 
 		.side-bg
 			flex: 3
-	
+
 @media (max-width: 900px)
 	section.content
 		.kelsey
 			flex-direction: column
-	
+
 			p
 				font-size: 15px
 				padding: 5px
-	
+
 @media (max-width: 740px)
 	section.content
 		height: auto
-	
+
 		h2
 			font-size: 45px
 			padding-top: 5px
-	
+
 		.kelsey
 			height: auto
-	
+			min-height: auto
+
 			h2.side
 				font-size: 15px
-		
+
 			p
 				font-size: 12px
-		
+
 			ul
 				font-size: 12px
-	
+
 			.right-half, .left-half
 				height: auto

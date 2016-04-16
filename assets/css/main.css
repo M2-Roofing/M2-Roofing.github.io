@@ -1655,7 +1655,7 @@ section.content {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 22vw 50vh;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   overflow: hidden;
   padding: 0;
@@ -1854,6 +1854,7 @@ section.content .kelsey .side-bg {
   }
   section.content .kelsey {
     height: auto;
+    min-height: auto;
   }
   section.content .kelsey h2.side {
     font-size: 15px;
