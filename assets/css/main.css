@@ -58,6 +58,7 @@ hr {
   height: 5px;
   position: relative;
   -webkit-transform: translateY(25px);
+      -ms-transform: translateY(25px);
           transform: translateY(25px);
   background: black;
   -webkit-transition: all 0ms 300ms;
@@ -80,9 +81,7 @@ hr {
   bottom: 10px;
   background: black;
   -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
           transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .bar:after {
@@ -92,29 +91,25 @@ hr {
   top: 10px;
   background: black;
   -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
           transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .bar.animate:after {
   top: 0;
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
           transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .bar.animate:before {
   bottom: 0;
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
   -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
           transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 @media (max-width: 500px) {
@@ -506,6 +501,7 @@ input[type="button"]:focus {
   background: white;
   padding: 90px 0 20px;
   -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
           transform: translateY(-100%);
   -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
@@ -598,6 +594,7 @@ input[type="button"]:focus {
     background: white;
     padding: 90px 0 20px;
     -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
@@ -633,8 +630,7 @@ input[type="button"]:focus {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            -ms-grid-row-align: center;
-        align-items: center;
+            align-items: center;
     padding: 0;
     box-shadow: none;
     z-index: 4;
@@ -657,6 +653,7 @@ input[type="button"]:focus {
     background: rgba(255, 255, 255, 0.9);
     padding: 140px 0 20px;
     -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
             transform: translateY(-100%);
     -webkit-transition: all 2s ease-in-out;
             transition: all 2s ease-in-out;
@@ -703,6 +700,7 @@ input[type="button"]:focus {
   .home-wrap .mobile-nav.is-open {
     display: block;
     -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
             transform: translateY(0%);
   }
 }
@@ -899,6 +897,7 @@ section.works .gallery-contain .gallery .gallery-images img {
 }
 
 .col-33 {
+  width: -webkit-calc(100%/3);
   width: calc(100%/3);
   height: 100%;
   padding: 0;
@@ -948,6 +947,7 @@ section.top video {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
   min-width: 100%;
@@ -1281,6 +1281,7 @@ section.four .topper-text {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
+  height: -webkit-calc(100vh/7);
   height: calc(100vh/7);
   width: 100%;
   background: white;
@@ -1304,6 +1305,7 @@ section.four .half-top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  height: -webkit-calc(100vh*3/7);
   height: calc(100vh*3/7);
   width: 100%;
 }
@@ -1326,6 +1328,7 @@ section.four .half-bottom {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
+  height: -webkit-calc(100vh*3/7);
   height: calc(100vh*3/7);
   width: 100%;
   margin: 0;
@@ -1741,7 +1744,8 @@ section.content .kelsey .left-half {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
